@@ -2,22 +2,28 @@
 import {injectGlobal} from 'styled-components'
 
 const colors = {
-  white: '#f4f4f4',
-  grays: {
-    light: '#eee',
-    medium: '#999',
-    dark: '#333'
-  }
+  primary: '#0eb1d2',
+  accent: '#02182b',
+  error: '#d7263d',
+  contrast: '#dee5e5'
 }
 
 const margins = {
-  base: '1.5rem'
+  bottom: '1.5rem'
+}
+
+const paddings = {
+  quarter: '0.25rem',
+  half: '0.5rem',
+  base: '1rem',
+  double: '2rem'
 }
 
 // Reusable definitions for colors, spacings, etc.
 export const theme = {
   colors,
-  margins
+  margins,
+  paddings
 }
 
 // Inject some global styles that are most likely to be coupled to theme variables.
@@ -26,7 +32,7 @@ injectGlobal`
     font-size: 16px;
     font-weight: normal;
     font-family: sans-serif;
-    background-color: ${colors.white};
+    background-color: ${colors.contrast};
   }
 `
 

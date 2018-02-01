@@ -1,9 +1,9 @@
 
-# Greenfield
+# Formik Saga
 
-Opinionated application organization and libraries for bootstrapping new React-based applications.
+Example application leveraging Formik & Redux Saga to handle typical form & API scenarios.
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Greenfield](https://github.com/bfillmer/greenfield).
 
 ## Commands
 

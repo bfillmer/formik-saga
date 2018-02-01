@@ -3,12 +3,14 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import {routeType} from 'selectors'
-import {ROUTE_HOME} from 'types'
+import {ROUTE_LOGIN, ROUTE_DASHBOARD} from 'types'
 
-import {Home} from 'view/Home'
+import {Login} from 'view/Login'
+import {Dashboard} from 'view/Dashboard'
 
 const routesMap = {
-  [ROUTE_HOME]: Home
+  [ROUTE_LOGIN]: Login,
+  [ROUTE_DASHBOARD]: Dashboard
 }
 
 const mapStateToProps = state => ({
@@ -16,10 +18,8 @@ const mapStateToProps = state => ({
 })
 
 const Container = ({route}) => {
-  const Route = routesMap[route] ? routesMap[route] : routesMap[ROUTE_HOME]
-  return (
-    <Route />
-  )
+  const Route = routesMap[route] ? routesMap[route] : routesMap[ROUTE_LOGIN]
+  return (<Route />)
 }
 
 export const Routes = connect(mapStateToProps)(Container)

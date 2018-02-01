@@ -2,14 +2,14 @@
 import {LOCATION_CHANGE} from '@curi/redux'
 import {cancel, fork, take, takeEvery} from 'redux-saga/effects'
 
-import {ROUTE_HOME} from 'types'
+import {ROUTE_LOGIN} from 'types'
 
 // Route Sagas
-import {init as initHome} from 'state/sagas/home'
+import {init as initLogin} from 'state/sagas/login'
 
 // Routes that require side effects on load are mapped here, [type]: saga.
 const routesMap = {
-  [ROUTE_HOME]: initHome
+  [ROUTE_LOGIN]: initLogin
 }
 
 // Run the saga for a given route if one exists, then watch for the next location change

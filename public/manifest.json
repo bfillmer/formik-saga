@@ -1,6 +1,6 @@
 {
-  "short_name": "greenfield",
-  "name": "General React Playground",
+  "short_name": "formik-saga",
+  "name": "Formik and Sagas Proof of Concept",
   "icons": [
     {
       "src": "favicon.ico",

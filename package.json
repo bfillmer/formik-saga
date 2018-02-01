@@ -1,12 +1,13 @@
 {
-  "name": "greenfield",
-  "version": "1.8.0",
+  "name": "formik-saga",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@curi/core": "1.0.0-beta.25",
     "@curi/redux": "^1.0.0-beta.2",
     "@hickory/browser": "^1.0.0-beta.5",
     "axios": "0.17.1",
+    "formik": "^0.10.5",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-redux": "^5.0.6",
@@ -14,7 +15,8 @@
     "redux-actions": "^2.2.1",
     "redux-data-structures": "^0.1.6",
     "redux-saga": "0.16.0",
-    "styled-components": "3.1.4"
+    "styled-components": "3.1.4",
+    "yup": "^0.24.0"
   },
   "devDependencies": {
     "react-scripts": "1.1.0",
