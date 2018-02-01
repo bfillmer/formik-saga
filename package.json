@@ -1,0 +1,42 @@
+{
+  "name": "greenfield",
+  "version": "1.8.0",
+  "private": true,
+  "dependencies": {
+    "@curi/core": "1.0.0-beta.25",
+    "@curi/redux": "^1.0.0-beta.2",
+    "@hickory/browser": "^1.0.0-beta.5",
+    "axios": "0.17.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-data-structures": "^0.1.6",
+    "redux-saga": "0.16.0",
+    "styled-components": "3.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.0",
+    "redux-devtools-extension": "^2.13.2",
+    "serve": "^6.4.9",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ react-scripts start",
+    "now-start": "serve -s ./build",
+    "build": "NODE_PATH=src/ react-scripts build",
+    "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
+    "coverage": "yarn test -- --coverage",
+    "lint": "standard --fix"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!node_modules/",
+      "!src/state/store.js",
+      "!src/state/sagas/*",
+      "!src/index.js"
+    ]
+  }
+}
